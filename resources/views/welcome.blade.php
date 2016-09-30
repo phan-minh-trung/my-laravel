@@ -75,13 +75,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Notifications
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
+                    {{ link_to_action('NotificationController@sendMail', 'Mail') }}
+                    <a href="{{ URL::route('notification.db') }}">Database</a>
+                    <a href="{{ URL::route('notification.sms') }}">SMS</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>

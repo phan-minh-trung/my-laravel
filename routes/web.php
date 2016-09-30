@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('notification/send/mail', 'NotificationController@sendMail')->name('notification.mail');
+
+Route::get('notification/send/db', 'NotificationController@sendDb')->name('notification.db');
+
+Route::get('notification/send/sms', 'NotificationController@sendSms')->name('notification.sms');
