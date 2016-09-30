@@ -20,3 +20,9 @@ Route::get('notification/send/mail', 'NotificationController@sendMail')->name('n
 Route::get('notification/send/db', 'NotificationController@sendDb')->name('notification.db');
 
 Route::get('notification/send/sms', 'NotificationController@sendSms')->name('notification.sms');
+
+Route::get('notification/send/slack', 'NotificationController@sendSlack')->name('notification.slack');
+
+Route::get('manage-vue', 'VueItemController@manageVue');
+
+Route::resource('vueitems','VueItemController');

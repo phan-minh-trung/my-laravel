@@ -179,6 +179,10 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
+
+        Nexmo\Laravel\NexmoServiceProvider::class,
+
+        Maknz\Slack\SlackServiceProvider::class,
     ],
 
     /*
@@ -229,6 +233,10 @@ return [
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        'Nexmo' => \Nexmo\Laravel\Facade\Nexmo::class,
+
+        'Slack' => Maknz\Slack\Facades\Slack::class,
     ],
 
 ];
